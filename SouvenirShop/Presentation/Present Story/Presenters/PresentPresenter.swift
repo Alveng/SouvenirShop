@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+// TODO: я бы удалил все интерфесы к презентеру, чтобы view имело прямой доступ. Иначе придется сделать какого-нибудь посредника, чтобы он хранил в себе все связи
 protocol PresentsModuleInterface: class {
     func updateView()
     func send(present: Present, with index: Int)

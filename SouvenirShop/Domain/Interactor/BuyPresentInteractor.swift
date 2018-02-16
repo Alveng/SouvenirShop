@@ -16,6 +16,7 @@ class BuyPresentInteractor {
     let disposeBag = DisposeBag()
     
     func buy(present: Present, for card: PaymentCard, completion: @escaping (_ title: String?, _ message: String?) -> (), failure: @escaping (Error) -> ()) {
+        // TODO: add request model + parsing response model
         let params: [String : Any] = ["stripeToken": card.tokenId,
                                       "amount": present.price,
                                       "currency": "usd",

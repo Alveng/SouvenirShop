@@ -9,6 +9,7 @@
 import UIKit
 
 
+// TODO: magic numbers to const
 class LineView: UIView {
     
     let width: CGFloat = 4

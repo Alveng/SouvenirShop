@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("ERROR! You should add env var to connect API")
         }
         
-        
         return true
     }
 }

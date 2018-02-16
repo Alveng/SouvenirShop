@@ -13,6 +13,7 @@ protocol RouterNavigationable {
     func close()
 }
 
+// TODO: independ loading
 protocol RouterLoadingable {
     func startLoading()
     func stopLoading()

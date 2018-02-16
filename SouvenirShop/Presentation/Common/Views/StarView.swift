@@ -9,6 +9,7 @@
 import UIKit
 
 
+// TODO: magic numbers to const
 class StarView: UIView {
     
     private var pathLayer: CAShapeLayer?

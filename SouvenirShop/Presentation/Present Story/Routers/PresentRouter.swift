@@ -18,6 +18,7 @@ class PresentRouter: Router {
 
 extension PresentRouter: PresentRouterInput {
     
+    // TODO: вынести инициализацию сторибордов и экранов
     func buying(present: Present, with index: Int) {
         guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChooseCardViewController") as? ChooseCardViewController else {
             return

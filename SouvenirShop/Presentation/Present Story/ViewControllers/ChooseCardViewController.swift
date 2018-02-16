@@ -90,6 +90,7 @@ extension ChooseCardViewController: ChooseCardViewInterface {
     }
 }
 
+// TODO: управление таблицей передать отдельному компоненту, логику заполнения и табов реализовать на базовом уровне с моделями ячеек
 extension ChooseCardViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

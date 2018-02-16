@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+// TODO: Вынести состояния в модели, вынести константы
 class AnimatedPresentView: UIView {
     
     @IBOutlet var contentView: UIView!

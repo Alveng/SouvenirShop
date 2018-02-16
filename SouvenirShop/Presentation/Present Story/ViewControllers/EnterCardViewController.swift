@@ -81,8 +81,6 @@ class EnterCardViewController: ViewController {
             .bind(to: addCardButton.rx.isEnabled)
             .disposed(by: disposeBag)
         
-        //cardField.isValid
-        
         cardHolderTextField.rx
             .text
             .skip(2)
