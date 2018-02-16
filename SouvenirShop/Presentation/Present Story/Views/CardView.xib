@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="SouvenirShop" customModuleProvider="target">
+            <connections>
+                <outlet property="cardHolderLabel" destination="ED1-wv-mbA" id="s1z-AT-b7s"/>
+                <outlet property="cardNumberLabel" destination="Acx-eA-4gy" id="aZx-e3-vMF"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Lng-w6-VBN"/>
+                <outlet property="cvcLabel" destination="Scp-RU-cUP" id="3iP-JC-UZH"/>
+                <outlet property="dateLabel" destination="oeA-al-Ns7" id="Hkp-zN-vuX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXX XXXX XXXX XXXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acx-eA-4gy">
+                    <rect key="frame" x="16" y="16" width="192" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM/YY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeA-al-Ns7">
+                    <rect key="frame" x="16" y="86" width="56" height="21"/>
+                    <color key="tintColor" red="0.20596292614936829" green="0.46943831443786621" blue="0.96475642919540405" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARD HOLDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ED1-wv-mbA">
+                    <rect key="frame" x="16" y="123" width="116.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVC CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scp-RU-cUP">
+                    <rect key="frame" x="219" y="86" width="85" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ED1-wv-mbA" firstAttribute="top" secondItem="oeA-al-Ns7" secondAttribute="bottom" constant="16" id="5nG-5g-TqE"/>
+                <constraint firstItem="Scp-RU-cUP" firstAttribute="centerY" secondItem="oeA-al-Ns7" secondAttribute="centerY" id="9oF-5c-1yd"/>
+                <constraint firstItem="Acx-eA-4gy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="IE5-kg-ZRU"/>
+                <constraint firstAttribute="trailing" secondItem="Scp-RU-cUP" secondAttribute="trailing" constant="16" id="IbH-CR-td5"/>
+                <constraint firstItem="Acx-eA-4gy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Jrc-GN-H6S"/>
+                <constraint firstItem="ED1-wv-mbA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Zpw-hn-dyE"/>
+                <constraint firstItem="oeA-al-Ns7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="m1H-t9-SrP"/>
+                <constraint firstAttribute="bottom" secondItem="ED1-wv-mbA" secondAttribute="bottom" constant="16" id="o2J-Ng-m1g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
